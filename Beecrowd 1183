@@ -4,11 +4,12 @@ int main(){
     
 char O;
 double M[12][12];
-double soma;
-scanf(" %c", &O); #Criação das variaveis
+double soma;      #Criação das variaveis
+scanf(" %c", &O); 
 for(int i = 0 ; i < 12; i++){
-    for(int j = 0 ;j < 12; j++)Desenvolvimento de matriz 
-         if(j > i){  #Acima da diagona principal será formada enquando j coluna é > i linha na matriz.
+    for(int j = 0 ;j < 12; j++){
+        scanf("%lf", &M[i][j]); #Desenvolvimento de matriz 
+         if(j > i){       #Acima da diagona principal será formada enquando j coluna é > i linha na matriz.
              
          soma = soma+= M[i][j];
         }
